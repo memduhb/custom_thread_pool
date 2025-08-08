@@ -8,15 +8,12 @@ This thread pool implements a producer-consumer pattern with a fixed number of w
 
 ## Features
 
-- **Thread Pool Management**: Fixed-size pool of worker threads with automatic lifecycle management
-- **Task Queue**: Thread-safe task queuing with condition variable signaling for efficient thread wakeup
-- **Modern C++**: Leverages std::thread, std::function, std::mutex, and std::condition_variable
-- **Clean Shutdown**: Graceful thread termination with proper cleanup and task completion
-- **Thread Safety**: Full thread-safe implementation with mutex protection and atomic operations
+- **Thread Pool Management**: Fixed-size pool of worker threads
+- **Task Queue**: Thread-safe task queuing with condition variables
+- **Clean Shutdown**: Graceful thread termination and cleanup
+- **Thread Safety**: Full thread-safe implementation with mutex protection
 - **Performance Optimized**: Tasks executed outside locks to minimize contention
 - **Move Semantics**: Efficient task transfer using move semantics
-- **Error Handling**: Robust error handling and edge case management
-- **Well Documented**: Comprehensive documentation with clear API and implementation details
 
 ## Learning Outcomes
 
@@ -25,11 +22,9 @@ This project demonstrates key concepts in concurrent programming and modern C++:
 - **Concurrency Control**: Mutex-based synchronization and condition variable signaling
 - **Thread Management**: Worker thread creation, lifecycle management, and cleanup
 - **Producer-Consumer Pattern**: Task submission and execution with thread-safe queuing
-- **Modern C++ Features**: std::thread, std::function, std::mutex, std::condition_variable
 - **Memory Management**: RAII principles and automatic resource cleanup
 - **Performance Optimization**: Lock contention minimization and efficient task scheduling
 - **Thread Safety**: Atomic operations and proper synchronization patterns
-- **Error Handling**: Graceful shutdown and edge case management
 
 ## Layout
 
